@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<s:Panel x="95" y="57" width="250" title="Login">
+		<s:Label text="Usuário: " x="10" y="10" />
+		<s:TextInput x="60" y="8" />
+		
+		<s:Label text="Senha: " x="10" y="40"/>
+		<s:TextInput x="60" y="38" />
+		
+		<s:Button x="155" y="68" label="Entrar"/>
+	</s:Panel>
+</s:Application>

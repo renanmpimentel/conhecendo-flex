@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			private function VerificarRadio(): void{
+				if(radio1.selected){
+					Alert.show("Você selecionou a opção 01");
+				}
+				
+				if(radio3.selected){
+					Alert.show("Você selecionou a opção 02");	
+				}
+				
+				if(radio3.selected){
+					Alert.show("Você selecionou a opção 03");
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<mx:RadioButton id="radio1" x="101" y="75"/>
+	<mx:RadioButton id="radio2" x="101" y="95"/>
+	<mx:RadioButton id="radio3" x="101" y="116"/>
+	<mx:Button x="153" y="94" label="Check" click="VerificarRadio()"/>
+	
+</s:Application>

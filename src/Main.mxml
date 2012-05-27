@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			public function CalcularSoma(): void{
+				Soma.text = ( parseInt(Valor1.text) + parseInt(Valor2.text) ).toString();
+			}
+		]]>
+	</fx:Script>
+	
+	<mx:TextInput x="81" y="67" width="75" id="Valor1" />
+	<mx:TextInput x="181" y="67" width="75" id="Valor2" />
+	<mx:TextInput x="281" y="67" width="75" id="Soma" />
+	<s:Label x="163" y="75" text="+"/>
+	<s:Label x="263" y="75" text="="/>
+	<s:Button x="386" y="68" label="Calcular Soma" id="BotaoCalcularSoma" click="CalcularSoma()"/>
+	
+	
+</s:Application>
